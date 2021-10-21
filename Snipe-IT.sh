@@ -127,7 +127,7 @@ fi
 
 # 部署网站业务系统
 mkdir /www
-wget -O /www/snipe-it-5.3.0.zip https://github.com/snipe/snipe-it/archive/refs/tags/v5.3.0
+wget -O /www/snipe-it-5.3.0.zip https://github.com/snipe/snipe-it/archive/refs/tags/v5.3.0.zip
 unzip /www/snipe-it-5.3.0.zip -d /www/
 if [ -d "/www/snipe-it-5.3.0" ];then
   echo "下载完成"
