@@ -12,7 +12,7 @@ sudo curl -o Snipe-IT.sh https://raw.githubusercontent.com/aheig/Onekeyscript/ma
 
 # 5、changesource  一键更换国内软件仓库源
 
-  脚本来源：[苍穹の下](https://www.blueskyxn.com/202101/3828.html)
+  脚本来源：[BlueSkyXN](https://github.com/BlueSkyXN/ChangeSource)
 ```
 yum update /y
 sudo curl -o changesource.sh https://raw.githubusercontent.com/aheig/Onekeyscript/main/changesource.sh && chmod +x changesource.sh && bash ./changesource.sh
