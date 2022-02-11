@@ -1,7 +1,7 @@
 #!/bin/bash
 #backup_mysql_data
 #author cy
-#2021-02-01
+#2022-02-011
 #检查目录权限
 BackupDir=/home/backup/
 SaveDir=/data/sdv1/backup
