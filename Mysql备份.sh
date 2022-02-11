@@ -6,6 +6,7 @@
 BackupDir=/home/backup/
 SaveDir=/data/sdv1/backup
 fdate=`date "+%Y%m%d%H%M%S"`
+YourMySQLPasswd=
 chown -R mysql:mysql $BackupDir
 chmod -R 775 $BackupDir
 chmod -R 775 $SaveDir
@@ -16,7 +17,7 @@ function database1 () {
                 mkdir -p $BackupDir/mysql
                 fi
                 chown -R mysql:mysql $BackupDir/mysql
-        mysqldump -u root -p'YourMySQLPasswd'  database1 > $BackupDir/mysql/database1_$fdate.sql
+        mysqldump -u root -p'$YourMySQLPasswd'  database1 > $BackupDir/mysql/database1_$fdate.sql
         echo "`date "+%m %d %H:%M:%S"` 备份 database1 数据库完成" >> $BackupDir/backmysql.log
 }
 #备份database2库
@@ -26,7 +27,7 @@ function database2 () {
                 mkdir -p $BackupDir/mysql
                 fi
                 chown -R mysql:mysql $BackupDir/mysql
-        mysqldump -u root -p'YourMySQLPasswd' database2 > $BackupDir/mysql/database2_$fdate.sql
+        mysqldump -u root -p'$YourMySQLPasswd' database2 > $BackupDir/mysql/database2_$fdate.sql
         echo "`date "+%m %d %H:%M:%S"` 备份 database2 数据库完成"  >> $BackupDir/backmysql.log
 }
 #备份database3库
@@ -36,7 +37,7 @@ function database3 () {
                 mkdir -p $BackupDir/mysql
                 fi
                 chown -R mysql:mysql $BackupDir/mysql
-        mysqldump -u root -p'YourMySQLPasswd' database3 > $BackupDir/mysql/database3_$fdate.sql
+        mysqldump -u root -p'$YourMySQLPasswd' database3 > $BackupDir/mysql/database3_$fdate.sql
         echo "`date "+%m %d %H:%M:%S"` 备份 database3 数据库完成"  >> $BackupDir/backmysql.log
 }
 #压缩删除备份文件
