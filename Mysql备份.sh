@@ -6,7 +6,7 @@
 BackupDir=/home/backup/
 SaveDir=/data/sdv1/backup
 fdate=`date "+%Y%m%d%H%M%S"`
-YourMySQLPasswd=
+YourMySQLPasswd=数据库root密码
 chown -R mysql:mysql $BackupDir
 chmod -R 775 $BackupDir
 chmod -R 775 $SaveDir
