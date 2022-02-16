@@ -22,4 +22,7 @@ sudo curl -o changesource.sh https://raw.githubusercontent.com/aheig/Onekeyscrip
 
   一键Docker、GO、JDK、MAVEN、MYSQL、NGINX、TOMCAT
 
-#
+# 官方一键Docker
+```
+curl -sSL https://get.docker.com/ | sh
+```
