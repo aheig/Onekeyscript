@@ -23,11 +23,11 @@ sudo curl -o changesource.sh https://raw.githubusercontent.com/aheig/Onekeyscrip
   一键Docker、GO、JDK、MAVEN、MYSQL、NGINX、TOMCAT
 
 # 官方一键Docker
-国外
+国外：
 ```
 curl -sSL https://get.docker.com/ | sh
 ```
-国内
+国内：
 ```
 curl -fsSL https://get.docker.com -o get-docker.sh
 sh get-docker.sh --mirror=Aliyun
