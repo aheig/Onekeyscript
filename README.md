@@ -29,5 +29,10 @@ curl -sSL https://get.docker.com/ | sh
 ```
 国内
 ```
+curl -fsSL https://get.docker.com -o get-docker.sh
+sh get-docker.sh --mirror=Aliyun
+```
+或者
+```
 curl -sSL https://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh
 ```
