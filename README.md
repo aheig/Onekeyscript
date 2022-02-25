@@ -29,5 +29,5 @@ curl -sSL https://get.docker.com/ | sh
 ```
 国内
 ```
-curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
+curl -sSL https://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh
 ```
